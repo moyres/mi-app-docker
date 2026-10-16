@@ -12,7 +12,7 @@ COPY package.json yarn.lock .yarnrc.yml ./
 RUN yarn install --immutable
 
 # Copiar el resto del proyecto
-COPY .
+COPY . .
 
 EXPOSE 3000
 
